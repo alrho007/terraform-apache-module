@@ -2,8 +2,9 @@ Terraform module to provision EC2 Instance running an Apache server.
 
 Not intended for production, only to showcase how to create custom modules in Terraform registry.
 
-```
-hcl
+### Apache Module Example
+
+```hcl
 terraform {
   
 }
@@ -24,4 +25,5 @@ module "apache" {
 output "public_ip" {
   value = module.apache.public_ip
 }
+
 ```
