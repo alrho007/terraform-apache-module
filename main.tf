@@ -1,5 +1,5 @@
 data "aws_vpc" "my_vpc" {
-  id = var.vpc_Id
+  id = var.vpc_id
   #"vpc-08c3453101e386484"
 }
 
@@ -51,7 +51,7 @@ resource "aws_security_group" "sg_web_server" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "deployer-key"
-  public_key = var.publicKey
+  public_key = var.public_key
 }
 
 data "template_file" "user_data" {

@@ -1,4 +1,4 @@
-variable "vpc_Id" {
+variable "vpc_id" {
   type = string
 }
 
@@ -7,7 +7,7 @@ variable "my_ip_cidr" {
   description = "My IP address for IPv4 e.g. 213.255.128.102/32"
 }
 
-variable "publicKey" {
+variable "public_key" {
   type = string
 }
 
